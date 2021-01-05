@@ -1,0 +1,27 @@
+{
+  "name": "husky-eslint-integration",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "installationGuideUrl": "https://medium.com/gits-apps-insight/utilizing-git-hook-by-using-eslint-husky-and-lint-staged-18b6f6f60f1e",
+  "scripts": {
+    "lint": "eslint .",
+    "pretest": "eslint . --fix"
+  },
+  "husky":{
+    "hooks":{
+      "pre-commit": "npm run pretest"
+    }
+  },
+  "devDependencies": {
+    "eslint": "^7.17.0",
+    "eslint-config-standard": "^16.0.2",
+    "eslint-plugin-import": "^2.22.1",
+    "eslint-plugin-node": "^11.1.0",
+    "eslint-plugin-promise": "^4.2.1",
+    "husky": "^4.3.6"
+  }
+}
