@@ -11,8 +11,8 @@
     "lint": "eslint .",
     "pretest": "eslint . --fix"
   },
-  "husky":{
-    "hooks":{
+  "husky": {
+    "hooks": {
       "pre-commit": "echo \"[Husky] pre-commit\""
     }
   },
